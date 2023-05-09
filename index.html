@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Login Form</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="loginbox">
+	<img src="img/dark.png" class="avatar">
+		<h1>Login Here</h1>
+		<form method="post" action="file:///D:/F_LAB/Homepage.html">
+			<p>Username</p>
+			<input type="text" name="" placeholder="Enter Username">
+Password: <input type="password" value="" placeholder="Enter Password" id="myInput"><br><br>
+<p>Show Password</p><input type="checkbox" onclick="myFunction()">
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+
+			<input type="submit" name="" value="Login">
+			<a href="#">Lost your Password?</a><br>
+			<a href="#">Don't have an account?</a>
+</form>
+</body>
+</html>
